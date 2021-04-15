@@ -70,7 +70,7 @@ int main()
         printf("teste 3;failed\n");
         }
     
-    //case 4
+    //case 4 - test for 1 operation more than the minimum, it cannot be transformed
     k = 9;
     if(!ConcatRemove(s, t, k))
         {
@@ -81,7 +81,7 @@ int main()
         printf("teste 4;failed\n");
         }
     
-    //case 5
+    //case 5 - test for k very high
     k = 99;
     if(ConcatRemove(s, t, k))
         {
@@ -92,7 +92,7 @@ int main()
         printf("teste 5;failed\n");
         }
     
-    //case 6
+    //case 6 - s and t are the same strings, 1 operation, it cannot be transformed
     s = "teste\n";
     t = "teste\n";
     k = 1;
@@ -105,7 +105,7 @@ int main()
         printf("teste 6;failed\n");
         }
     
-    //case 7
+    //case 7 - s and t are the same strings, 2 operations, 1 concat and 1 remove, it can be transformed
     k = 2;
     if(ConcatRemove(s, t, k))
         {
